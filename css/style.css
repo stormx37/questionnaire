@@ -238,9 +238,6 @@ select {
 }
 #year option {
 	color: #000;
-	width: 150px;
-	text-align: center;
-	margin: 0 auto;
 }
 select::-ms-expand {
 	display: none;
