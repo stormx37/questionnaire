@@ -1,0 +1,450 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.workspace {
+	width: auto;
+	margin: 0 auto;
+}
+nav {
+	display: block;
+	margin: 0 auto;
+}
+/* %%%%%%%%%% MENU WIDE %%%%%%%%%% */
+nav .inner-menu {
+	display: block;
+	margin: 0 auto;
+}
+nav .full-menu {
+	padding: 0 15px 15px;
+}
+nav .full-menu ul li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+nav .full-menu ul li a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: #435993;
+	font-weight: 300;
+	padding: 5px 0;
+}
+nav .full-menu ul li a:hover {
+	color: #1c1c1c;
+}
+nav .full-menu ul li a:hover:before {
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 1px;
+	width: 25px;
+	background-color: #1c1c1c;
+}
+
+/* %%%%%%%%%% MENU WIDE END %%%%%%%%%% */
+
+
+/* %%%%%%%%%% MAIN BLOCK START %%%%%%%%%% */
+.forest {
+	background: url('../img/forest.png') no-repeat top center;
+	padding: 15px 15px 50px;
+}
+.form h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+	font-weight: 100;
+	padding-top: 122px;
+	padding-left: 3px;
+	text-align: center;
+}
+.form .personal.info {
+	padding-top: 138px;
+}
+.form .personal.exp {
+	padding-top: 120px;
+}
+.form .personal.js {
+	padding-top: 190px;	
+}
+.form .personal.about-me {	
+	padding-top: 238px;
+}
+.form .personal h3 {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.form .personal h3:before {
+	content: '';
+	width: 47px;
+	height: 47px;
+	position: absolute;
+	top: -73px;
+	left: calc(50% - 26px);
+	background: url('../img/sprite.png') no-repeat;
+}
+.form .personal.exp h3:before {
+	content: '';
+	background-position: -47px 0px;
+}
+.form .personal.js h3:before {
+	content: '';
+	background-position: -94px 0px;
+}
+.form .personal.about-me h3:before {
+	content: '';
+	background-position: -141px 0px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #c8c8c8;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #c8c8c8;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #c8c8c8;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #c8c8c8;
+}
+
+
+/* %%%%%%%%%% COLLAPSE MENU %%%%%%%%%% */
+nav .collapse-menu {
+	text-align: right;
+	padding: 15px;
+}
+nav .full-menu {
+	display: none;
+	text-align: center;
+}
+nav .collapse-menu .collapsein {
+	display: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+nav .collapse-menu .collapsein li a{
+	text-decoration: none;
+	display: block;
+	color: #435993;
+	padding: 3px 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+nav .collapse-menu.active .menu-toggle {
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	height: 22px;
+}
+nav .collapse-menu.active .menu-toggle span:before {
+	transition: all 0.7s ease-out;
+}
+nav .collapse-menu.active .menu-toggle span:after {
+	transition: all 0.7s ease-out;
+}
+nav .collapse-menu.active .menu-toggle span.chevron-down {
+	position: relative;
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: cornflowerblue;
+}
+nav .collapse-menu.active .menu-toggle span.chevron-down:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -7px;
+	left: 0;
+	width: 25px;
+	height: 3px;
+	background-color: cornflowerblue;
+}
+nav .collapse-menu.active .menu-toggle span.chevron-down:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 25px;
+	height: 3px;
+	background-color: cornflowerblue;
+}
+nav .collapse-menu.active .menu-toggle span.chevron-up {
+	position: relative;
+	display: block;
+	width: 25px;
+	height: 3px;
+}
+nav .collapse-menu.active .menu-toggle span.chevron-up:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 25px;
+	height: 3px;
+	background-color: red;
+	transform: rotate(45deg);
+}
+nav .collapse-menu.active .menu-toggle span.chevron-up:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 25px;
+	height: 3px;
+	background-color: red;
+	transform: rotate(-45deg);
+}
+/* %%%%%%%%%% COLLAPSE MENU END %%%%%%%%%% */
+
+input[type="text"] {
+	text-align: center;
+	font-size: 24px;
+	padding: 15px 0;
+	border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	margin-left: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	max-width: 320px;
+	padding: 15px;
+	text-align: center;	
+	font-size: 24px;
+	color: #c8c8c8;
+	margin-left: 0;
+	border-radius: 5px;
+	border-color: #c8c8c8;
+}
+#year option {
+	color: #000;
+	width: 150px;
+	text-align: center;
+	margin: 0 auto;
+}
+select::-ms-expand {
+	display: none;
+	text-align: center;
+}
+
+.form .input-line {
+	margin-bottom: 25px;
+	text-align: center;
+}
+.form .form-input {
+	outline: none;
+	width: 100%;
+}
+.select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-align-last: center; // для Хром
+	text-align: center; // для FF
+}
+.select:after {
+  content: "";
+  background: url('../img/arrow.png') no-repeat;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  z-index: 1;
+  width: 14px;
+  height: 9px;
+  pointer-events: none;
+}
+
+.checkbox-big-group {
+	display: flex;
+	flex-wrap: wrap;
+}
+.checkbox-group {
+	width: 100%;
+}
+.checkbox-big-group .checkbox-group label {	
+    position: relative;
+    cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+.checkbox-big-group .checkbox-group > div {
+	text-align: left;
+	margin-bottom: 15px;
+    padding-top: 5px;
+    padding-left: 24px;
+	max-width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.checkbox-big-group label::before {	
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -32px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #435993;
+	border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.checkbox-big-group .checkbox-group input[type="checkbox"] {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox-big-group input[type="checkbox"]:checked + label::before {
+    width: 22px;
+    height: 12px;
+    border-color: #00bad2;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+}
+
+.personal p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	max-width: 520px;
+	text-align: center;
+	margin: 0 auto;
+}
+.form .personal.about-me h3 {
+	margin-bottom: 15px;
+}
+textarea {
+	width: 100%;
+	height: 180px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 17px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #c8c8c8;
+	border: 1px solid #c8c8c8;
+	border-radius: 5px;
+	resize: none;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 70px auto 0;
+	width: 115px;
+	padding: 15px 0;
+	background: #435993;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	border-radius: 7px;
+}
+
+.slider {
+  position: relative;
+  width: auto;
+  height: 2px;
+  background: #8c8c8c;
+}
+.thumb {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #8c8c8c;
+  border-radius: 15px;
+	border-top-left-radius: 5px;
+	transform: rotate(45deg);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (min-width:540px) {
+	.form .form-input {
+		outline: none;
+		width: 520px;
+	}
+	.form .form-input.year {
+		width: 320px;
+	}
+	.select {
+		display: inline-block;
+		max-width: 320px;
+	}
+	.select:after {
+		right: 17px;
+	}
+}
+@media screen and (min-width:600px) {
+	.checkbox-group {
+		width: 36.5%;
+	}
+	.checkbox-group:last-child {
+		width: 27%;
+	}
+	.checkbox-big-group .checkbox-group > div {
+		max-width: none;
+	}
+}
+@media screen and (min-width:768px) {
+    nav .collapse-menu {
+    	display: none;
+	}
+	nav .full-menu {
+		display: block;
+	}
+	.forest {		
+		padding: 0 0 70px;
+	}
+	.workspace {
+		max-width: 768px;
+		margin: 0 auto;
+	}
+	input[type="text"] {
+		margin-left: 7px;	
+	}
+	.select {
+		left: 3px;
+	}	
+	nav .full-menu ul li {
+		display: inline-block;
+		margin: 0 25px;
+	}
+	nav .full-menu ul li a {
+		padding: 10px;		
+	}
+	nav .full-menu {
+		display: block!important;
+		height: auto!important;
+		padding: 25px 0 20px;
+	}
+	textarea {
+		width: 520px;
+	}
+}

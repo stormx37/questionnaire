@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Questionnaire test</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/polyfillCustomevent.js"></script>
+	<script src="js/polyfillClosest.js"></script>	
+	<script src="js/slider.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/collapse-menu.js"></script>
+</head>
+
+<body>
+
+<header class="workspace">
+<script>
+	var body = document.querySelector('body');
+	body.addEventListener('headerHover', function(){
+		//console.log("headerHover poiman!");
+	});
+</script>
+	<nav>			
+		<div class="collapse-menu active">
+			<button class="menu-toggle panel-collapsed"><span class="chevron chevron-down"></span></button>
+		</div>
+		<div class="full-menu">
+			<ul class="inner-menu">
+				<li><a href="#">Личная информация</a></li>
+				<li><a href="#">Опыт</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">О себе</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<main class="forest">
+	<form class="workspace form">
+		<h1>Анкета</h1>		
+		<div class="personal info">
+			<h3>Личная информация</h3>
+			<div class="input-line">
+				<input type="text" class="form-input" placeholder="ФИО">
+			</div>
+			<div class="input-line">
+			<div class="select">
+				<select id="year" class="form-input year">
+						<option disabled selected hidden>Год рождения</option>
+						<option>1991</option>
+						<option>1990</option>
+					</select>
+			</div>
+			</div>
+			<div class="input-line">
+				<input type="text" class="form-input" placeholder="Место проживания">
+			</div>
+			<div class="input-line">
+				<input type="text" class="form-input" placeholder="Skype">
+			</div>
+			<div class="input-line">
+				<input type="text" class="form-input" placeholder="E-mail">
+			</div>
+		</div>
+		
+		<div class="personal exp">
+			<h3>Расскажите о своем опыте</h3>		
+			<div class="checkbox-big-group">
+			<div class="checkbox-group">
+				<div><input type="checkbox" id="ch-1"><label for="ch-1">БЭМ/OOCSS</label></div>
+				<div><input type="checkbox" id="ch-2"><label for="ch-2">Stylus/LESS/SASS</label></div>
+				<div><input type="checkbox" id="ch-3"><label for="ch-3">Работаю с SVG</label></div>
+			</div>
+			<div class="checkbox-group">
+				<div><input type="checkbox" id="ch-4"><label for="ch-4">Верстаю семантично</label></div>
+				<div><input type="checkbox" id="ch-5"><label for="ch-5">ES2015/ES2016</label></div>
+				<div><input type="checkbox" id="ch-6"><label for="ch-6">Gulp/GRUNT</label></div>
+			</div>
+			<div class="checkbox-group">
+				<div><input type="checkbox" id="ch-7"><label for="ch-7">Webpack</label></div>
+				<div><input type="checkbox" id="ch-8"><label for="ch-8">jQuery</label></div>
+				<div><input type="checkbox" id="ch-9"><label for="ch-9">Использую Git</label></div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="personal js">
+			<h3>Уровень владения JavaScript</h3>
+			<div class="slider-box">                
+				<div id="slider" class="slider">
+					<div class="thumb" id="thumb"></div>
+				</div>
+				<script src="js/days.js"></script>
+                
+            </div>
+		</div>
+		
+		<div class="personal about-me">
+			<h3>Расскажите о себе</h3>
+			<p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+			<div>
+				<textarea placeholder="Понравилось тем, что..."></textarea>
+			</div>
+		</div>
+		<input type="submit" value="Готово">
+	</form>
+</main>
+
+</body>
+</html>
